@@ -6,6 +6,10 @@
     // echo"<pre>";
     // var_dump($resultado);
     // echo"</pre>";
+    if($_GET)
+    {
+        echo $_GET["msg"];
+    }
 ?>
 <!DOCTYPE html>
 <head>
@@ -14,7 +18,7 @@
 </head>
 <body>
     <h1>Cliente</h1>
-    <a href="">Novo Cliente</a>
+    <a href="form_cliente.html">Novo Cliente</a>
     <br>
     <table border="1">
         <thead>
@@ -24,7 +28,17 @@
             </tr>
         </thead>
         <tbody>
-            
+            <?php
+                foreach($resultado as $dado)
+                {
+                    echo "<tr>
+                          <td>{$dado->nome}&nbsp;
+                          {$dado->sobrenome}
+                          </td>
+                          <td>{$dado->cpf}</td>
+                          </td>";
+                }
+            ?>
         </tbody>
     </table> 
 </body>

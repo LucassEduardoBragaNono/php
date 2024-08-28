@@ -16,7 +16,8 @@
 		
 		$msg = $obj->inserir($conect);
 
-		echo $msg;
+		header("location: index.php?msg=$msg");
+		die(); // cabo a festa amigao
 		
 		
 		// echo "<pre>";
@@ -32,6 +33,6 @@
 	}
 	else
 	{
-		header("location:index.html");
+		header("location:form_cliente.html");
 	}
 ?>
