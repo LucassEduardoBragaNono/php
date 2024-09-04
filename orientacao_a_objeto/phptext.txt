@@ -1,0 +1,9 @@
+Encasulamento -------- GETS SETS 
+VISIBILIDADE -	Private
+				Protected	
+
+RELACIONAMENTOS ENTRE CLASSES
+
+-HERANÇA : customizar atributos e métodos
+-ASSOCIAÇÃO : unilateral, bilateral, classe associativa, composição, agregação
+-DEPENDÊNCIA 
