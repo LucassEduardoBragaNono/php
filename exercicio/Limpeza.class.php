@@ -1,17 +1,15 @@
 <?php
-    class Limpeza extends Paciente
+    class Limpeza extends Servico
     {
         public function __construct(
             private string $material_usado = "",
             private string $dente_tratado = "",
-            private string $nome = "",
-            private string $rg = "",
-            private string $endereco = "",
-            private string $data_nasc = "",
-            private string $profissao = ""
+            private string $descricao = "",
+            private string $preco = ""
+            
         )
         {
-            parent::__construct($nome, $rg, $endereco, $data_nasc, $profissao);
+            parent::__construct($descricao, $preco);
         }
 
             public function getMaterial_usado()

@@ -2,7 +2,7 @@
     class Servico {
         public function __construct(
             private string $descricao = "",
-            private float $preco = 0.00,
+            private float $preco = 0.00
         ){}
 
             public function getDescricao()
