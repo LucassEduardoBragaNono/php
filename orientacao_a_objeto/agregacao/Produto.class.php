@@ -6,7 +6,8 @@
             private string $descricao = "",
             private float $precos = 0.00,
             private int $estoque = 0,
-            private array $fornecedor = array()
+            private $categoria = null //objeto fracamente tipado || pd ser dql jeito private Categoria $categoria = new Categoria() so q sempre vai ter que ter a categoria
+            
         ){}
 
         public function getNome()
@@ -29,13 +30,17 @@
             return $this->estoque;
         }
 
-        public function getFornecedor()
+        public function getCategoria()
         {
-            return $this->fornecedor;
+            return $this->categoria;
         }
+        // public function getFornecedor()
+        // {
+        //     return $this->fornecedor;
+        // }
 
-        public function setFornecedor(Fornecedor $fornecedor)
-        {
-            $this->fornecedor[] = $fornecedor;
-        }
+        // public function setFornecedor(Fornecedor $fornecedor)
+        // {
+        //     $this->fornecedor[] = $fornecedor;
+        // }
     }
