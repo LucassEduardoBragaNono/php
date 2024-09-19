@@ -7,5 +7,11 @@
 
     $categoria = new Categoria("Pesca do zé", array($produto1, $produto2));
 
-
+    echo "Descritivo: {$categoria->getDescritivo()}<br><br>";
+    
+    foreach ($categoria->getProduto() as $produto) {
+        echo "Produto: {$produto->getNome()}<br>";
+        echo "Descrição: {$produto->getDescricao()}<br>";
+        echo "Preço: R$ {$produto->getPrecos()}<br><br>";
+    }
 ?>
