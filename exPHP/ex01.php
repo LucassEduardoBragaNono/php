@@ -13,11 +13,12 @@ if ($_POST) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Calcular soma com PHP</title>
 </head>
 <body>
-    <h1>Calcular soma</h1>
     <form action="" method="POST">
+        <h1>Calcular soma</h1>
         <label for="valor1">Valor 1:</label>
         <input type="text" name="valor1" placeholder="Digite o primeiro número" id="valor1" required><br/>
         <label for="valor2">Valor 2:</label>
