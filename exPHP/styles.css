@@ -34,6 +34,15 @@ label {
     text-align: left; /* Mantém o label à esquerda */
 }
 
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
 input[type="text"] {
     width: 100%;
     padding: 10px;
