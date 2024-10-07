@@ -1,0 +1,11 @@
+Pessoa - PAI
+Aluno, Autor e Editora HERDAM de Pessoa.
+
+Editora composicao Publicacoes
+
+Publicacoes PAI
+heranca filhos Livro e Revista
+
+Aluno e Emprestimo UNILATERAL
+
+Emprestimo e Itens composicao
